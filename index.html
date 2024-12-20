@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <!-- Utilizamos <h1> para agregar el encabezado -->
+        <h1>TareaIt</h1>
+    </header>
+    <!-- Dentro de un contenedor agrupamos el aticulo de la descripcion y la list de tareas -->
+    <div class="caja">
+        <div class="articulo">
+            <!-- Agregamos un elemento p para la descripcion -->
+            <h3>Acerca de</h3>
+            <p>Una aplicación de lista de tareas es una herramienta sencilla y eficiente diseñada para ayudar a los
+                usuarios a organizar y priorizar sus actividades diarias. Permite crear, marcar como completadas y
+                eliminar tareas, facilita el seguimiento de pendientes, mejorando la productividad y la gestión del
+                tiempo.</p>
+        </div>
+        <div class="container">
+
+            <h1>Lista de tareas</h1>
+            <input type="text" class="inputTarea" id="inputTarea" placeholder="Ingrese una Tarea...">
+            <ul id="listaTarea"></ul>
+        </div>
+    </div>
+
+    <!-- Footer pie de la pag-->
+    <footer class="footer">
+        <p>&copy; 2024 Mi Aplicación de Tareas. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Agregamos los enlaces para los archivos js e iconos -->
+    <script type="module" src=" https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js "> </script>
+    <script nomodule src=" https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js "> </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
