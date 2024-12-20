@@ -19,9 +19,40 @@ body {
     background-image: url(img/pexels-ann-h-45017-1762851.jpg);
     /* Agrega el fondo de la Pag */
     background-repeat: no-repeat;
+    padding: 20px;
+    margin: 50px;
 }
+.mobile_nav{
+    display: flex;
+    background-color: black;
+    height: 50px;
+    margin-bottom: 8px ;
+    width: 300px;
+    border-radius: 30px;
+    top: 20px;
+    line-height: 3;
+    text-decoration: none;
+    z-index: 3;
+
+}
+.mobile_nav a{
+    width: 300px;
+    padding: 4px 19px 0;
+}
+.mobile_nav .bi{
+    color: #fff;
+    cursor: pointer;
+}
+.desktop_nav{
+    display: none;
+  
+  }
 /* Estilos del header */
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
     font-size: x-large;
     /* Establece el tamaño de la fuente */
     height: 100%;
@@ -35,6 +66,9 @@ header h1 {
 }
 /* Estilos del div caja */
 .caja {
+    padding: 50px 70px;
+    border-radius: 7px;
+    margin-bottom: 1px;
     display: flex;
     flex-direction: row;
     /* Direcciona el elemento en fila */
@@ -209,9 +243,45 @@ footer p{
 
 /* Para pantallas pequeñas, que el artículo y el contenedor se apilen */
 @media screen and (max-width: 768px) {
+    body{
+        padding: 0;
+        margin: 0;
+    }
     .caja {
         flex-direction: column; /* Apila los elementos en pantallas pequeñas */
         align-items: center; /* Centra los elementos */
+    }
+    .mobile_nav{
+        display: none;
+    }
+    header{
+        flex-direction: column; /* Apila los elementos en lugar de alinearlos en fila */
+        align-items: center; /* Centra los elementos horizontalmente */
+        text-align: center; /* Centra el texto del contenido */
+        margin-left: 80px;
+    }
+    header h1{
+       margin-bottom: 10px;
+    }
+    .desktop_nav{
+        display: block;
+        background-color: #0d0e0e;
+        height: 300px;
+        width: 60px;
+        border-radius: 30px;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        line-height: 3;
+        text-decoration: none;
+   
+    }
+    .desktop_nav a{
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        padding: 4px 0;
+        text-align: center;
     }
 
     .articulo {
